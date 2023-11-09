@@ -1,0 +1,21 @@
+html
+  head
+    title User List
+    link(rel="stylesheet" href="/stylesheets/usersheet.css")
+  body
+    h1 User List
+    table
+      thead
+        tr
+          th ID
+          th First Name
+          th Last Name
+          th Email
+      tbody
+        each user in users
+          tr
+            td= user.id
+            td= user.firstName
+            td= user.lastName
+            td= user.email
+            
